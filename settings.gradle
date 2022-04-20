@@ -1,2 +1,4 @@
 rootProject.name = "GuoGuo"
 include ':app'
+include ':IMKit'
+include ':IMLib'
