@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.rong.libcore" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml
+8
+9    <!-- 保存图片，拍照等 -->
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:5:5-81
+10-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:5:22-78
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:6:5-80
+11-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:6:22-77
+12    <!-- 网络 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:8:5-67
+13-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:9:5-79
+14-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:10:5-76
+15-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:10:22-73
+16    <!-- 消息通道保活 -->
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:12:5-68
+17-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:12:22-65
+18    <!-- 定位，如果您需要定位相关的功能，可以打开以下注释 -->
+19    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+20
+21    <uses-permission android:name="${applicationId}.permission.RONG_ACCESS_RECEIVER" />
+21-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:16:5-88
+21-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:16:22-85
+22
+23    <!-- 融云自定义接收广播权限，用于广播接收 -->
+24    <permission
+24-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:19:5-22:18
+25        android:name="${applicationId}.permission.RONG_ACCESS_RECEIVER"
+25-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:20:9-72
+26        android:protectionLevel="signature" >
+26-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:21:9-44
+27    </permission>
+28
+29    <application>
+29-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:24:5-76:19
+30
+31        <!-- imlib config begin -->
+32        <service
+32-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:27:9-29:38
+33            android:name="io.rong.imlib.ipc.RongService"
+33-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:28:13-57
+34            android:process=":ipc" />
+34-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:29:13-35
+35
+36        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+36-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:31:9-72
+36-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:31:19-69
+37        <receiver
+37-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:33:9-35:38
+38            android:name="io.rong.imlib.HeartbeatReceiver"
+38-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:34:13-59
+39            android:process=":ipc" />
+39-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:35:13-35
+40        <!-- imlib config end -->
+41
+42
+43        <!-- 必选： SDK 核心功能 -->
+44        <service
+44-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:39:9-43:46
+45            android:name="io.rong.push.rongpush.PushService"
+45-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:40:13-61
+46            android:exported="true"
+46-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:41:13-36
+47            android:permission="android.permission.BIND_JOB_SERVICE"
+47-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:42:13-69
+48            android:process="io.rong.push" />
+48-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:43:13-43
+49
+50        <!-- push 相关事件接收器 -->
+51        <receiver
+51-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:46:9-61:20
+52            android:name="io.rong.push.rongpush.PushReceiver"
+52-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:47:13-62
+53            android:process="io.rong.push" > <!-- 此处进程可以改名，名称需要和PushService所在进程统一 -->
+53-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:48:13-43
+54            <!-- 心跳事件和网络切换事件监听,必须 -->
+55            <intent-filter>
+55-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:50:13-53:29
+56                <action android:name="io.rong.push.intent.action.HEART_BEAT" />
+56-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:51:17-80
+56-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:51:25-77
+57                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+57-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:52:17-79
+57-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:52:25-76
+58            </intent-filter>
+59
+60            <!-- 部分用户事件监听, 用来提高推送拉活率; 可移除 -->
+61            <intent-filter>
+61-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:56:13-60:29
+62                <action android:name="android.intent.action.USER_PRESENT" />
+62-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:57:17-77
+62-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:57:25-74
+63                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+63-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:58:17-87
+63-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:58:25-84
+64                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+64-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:59:17-90
+64-->D:\APP\GuoGuo\IMLib\AndroidManifest.xml:59:25-87
+65            </intent-filter>
+66        </receiver>
+67
+68        <!-- <receiver -->
+69        <!-- android:name="io.rong.push.notification.PushMessageReceiver" -->
+70        <!-- android:exported="false"> -->
+71        <!-- <intent-filter> -->
+72        <!-- <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" /> -->
+73        <!-- <action android:name="io.rong.push.intent.MESSAGE_CLICKED" /> -->
+74        <!-- <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" /> -->
+75        <!-- </intent-filter> -->
+76        <!-- </receiver> -->
+77
+78
+79        <!-- 必选： SDK 核心功能 -->
+80
+81
+82        <!-- end -->
+83    </application>
+84
+85</manifest>

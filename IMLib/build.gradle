@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 20220128
+        versionName "5.1.3.10"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    api 'com.google.code.gson:gson:2.8.6'
+}

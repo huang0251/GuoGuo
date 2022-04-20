@@ -1,0 +1,244 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.rong.imkit" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml
+8    <!-- 访问相册，访问文件系统等 -->
+9    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+9-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:4:5-80
+9-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:4:22-77
+10    <!-- 拍照 -->
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:6:5-65
+11-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:6:22-62
+12    <!-- 拍照等 -->
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:8:5-66
+13-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:8:22-63
+14    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+14-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:9:5-73
+14-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:9:22-70
+15    <!-- 网络 -->
+16    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+16-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:11:5-76
+16-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:11:22-73
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:12:5-67
+17-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:13:5-79
+18-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:14:5-76
+19-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:14:22-73
+20
+21    <application android:supportsRtl="true" >
+21-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:16:5-132:19
+21-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:16:18-44
+22        <activity
+22-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:17:9-19:52
+23            android:name="io.rong.imkit.conversationlist.RongConversationListActivity"
+23-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:18:13-87
+24            android:screenOrientation="portrait" />
+24-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:19:13-49
+25        <activity
+25-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:20:9-22:52
+26            android:name="io.rong.imkit.conversation.RongConversationActivity"
+26-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:21:13-66
+27            android:screenOrientation="portrait" />
+27-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:22:13-49
+28        <activity
+28-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:24:9-26:52
+29            android:name="io.rong.imkit.subconversationlist.RongSubConversationListActivity"
+29-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:25:13-80
+30            android:screenOrientation="portrait" />
+30-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:26:13-49
+31        <activity
+31-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:27:9-29:52
+32            android:name="io.rong.imkit.feature.mention.MentionMemberSelectActivity"
+32-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:28:13-72
+33            android:screenOrientation="portrait" />
+33-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:29:13-49
+34        <activity
+34-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:31:9-33:52
+35            android:name="io.rong.imkit.feature.location.AMapLocationActivity"
+35-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:32:13-79
+36            android:screenOrientation="portrait" />
+36-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:33:13-49
+37        <activity
+37-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:35:9-37:52
+38            android:name="io.rong.imkit.feature.location.AMapLocationActivity2D"
+38-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:36:13-81
+39            android:screenOrientation="portrait" />
+39-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:37:13-49
+40        <activity
+40-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:38:9-40:52
+41            android:name="io.rong.imkit.feature.location.AMapPreviewActivity"
+41-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:39:13-78
+42            android:screenOrientation="portrait" />
+42-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:40:13-49
+43        <activity
+43-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:41:9-43:52
+44            android:name="io.rong.imkit.feature.location.AMapPreviewActivity2D"
+44-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:42:13-80
+45            android:screenOrientation="portrait" />
+45-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:43:13-49
+46        <activity
+46-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:45:9-47:52
+47            android:name="io.rong.imkit.feature.location.AMapRealTimeActivity"
+47-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:46:13-66
+48            android:screenOrientation="portrait" />
+48-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:47:13-49
+49        <activity
+49-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:49:9-51:52
+50            android:name="io.rong.imkit.feature.location.AMapRealTimeActivity2D"
+50-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:50:13-68
+51            android:screenOrientation="portrait" />
+51-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:51:13-49
+52        <activity
+52-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:53:9-55:52
+53            android:name="io.rong.imkit.activity.RongWebviewActivity"
+53-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:54:13-57
+54            android:screenOrientation="portrait" />
+54-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:55:13-49
+55        <activity
+55-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:57:9-64:20
+56            android:name="io.rong.imkit.activity.FilePreviewActivity"
+56-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:58:13-57
+57            android:exported="false"
+57-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:59:13-37
+58            android:screenOrientation="portrait" >
+58-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:60:13-49
+59            <intent-filter>
+59-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:61:13-63:29
+60                <category android:name="android.intent.category.DEFAULT" />
+60-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:62:17-76
+60-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:62:27-73
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:66:9-74:20
+64            android:name="io.rong.imkit.activity.PicturePagerActivity"
+64-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:67:13-58
+65            android:configChanges="orientation|keyboardHidden|screenSize"
+65-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:68:13-74
+66            android:exported="false"
+66-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:69:13-37
+67            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+67-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:70:13-71
+68            <intent-filter>
+68-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:61:13-63:29
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:62:17-76
+69-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:62:27-73
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:75:9-77:52
+73            android:name="io.rong.imkit.activity.ForwardSelectConversationActivity"
+73-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:76:13-71
+74            android:screenOrientation="portrait" />
+74-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:77:13-49
+75        <activity
+75-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:79:9-82:52
+76            android:name="io.rong.imkit.activity.CombineWebViewActivity"
+76-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:80:13-60
+77            android:exported="false"
+77-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:81:13-37
+78            android:screenOrientation="portrait" />
+78-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:82:13-49
+79        <activity
+79-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:84:9-87:52
+80            android:name="io.rong.imkit.activity.WebFilePreviewActivity"
+80-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:85:13-73
+81            android:exported="false"
+81-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:86:13-37
+82            android:screenOrientation="portrait" />
+82-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:87:13-49
+83        <activity
+83-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:89:9-92:74
+84            android:name="io.rong.imkit.activity.CombinePicturePagerActivity"
+84-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:90:13-78
+85            android:exported="false"
+85-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:91:13-37
+86            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+86-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:92:13-71
+87        <activity
+87-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:93:9-96:74
+88            android:name="io.rong.imkit.activity.GIFPreviewActivity"
+88-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:94:13-69
+89            android:exported="false"
+89-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:95:13-37
+90            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+90-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:96:13-71
+91
+92        <!-- start图库配置项 -->
+93        <provider
+93-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:100:9-108:20
+94            android:name="io.rong.imkit.picture.PictureFileProvider"
+94-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:101:13-56
+95            android:authorities="${applicationId}.provider"
+95-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:102:13-60
+96            android:exported="false"
+96-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:103:13-37
+97            android:grantUriPermissions="true" >
+97-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:104:13-47
+98            <meta-data
+98-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:105:13-107:56
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:106:17-67
+100                android:resource="@xml/rc_file_path" />
+100-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:107:17-53
+101        </provider>
+102
+103        <activity
+103-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:110:9-112:52
+104            android:name="io.rong.imkit.picture.PictureSelectorActivity"
+104-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:110:19-66
+105            android:configChanges="orientation|keyboardHidden|screenSize"
+105-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:111:13-74
+106            android:screenOrientation="portrait" />
+106-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:112:13-49
+107        <activity
+107-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:113:9-117:64
+108            android:name="io.rong.imkit.picture.PictureSelectorCameraEmptyActivity"
+108-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:114:13-71
+109            android:configChanges="orientation|keyboardHidden|screenSize"
+109-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:115:13-74
+110            android:screenOrientation="portrait"
+110-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:116:13-49
+111            android:theme="@style/Picture.Theme.Translucent" />
+111-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:117:13-61
+112        <activity
+112-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:119:9-121:51
+113            android:name="io.rong.imkit.picture.PicturePreviewActivity"
+113-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:119:19-65
+114            android:configChanges="orientation|keyboardHidden|screenSize"
+114-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:120:13-74
+115            android:screenOrientation="portrait" />
+115-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:121:13-49
+116        <activity
+116-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:122:9-125:52
+117            android:name="io.rong.imkit.picture.PictureVideoPlayActivity"
+117-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:123:13-61
+118            android:configChanges="orientation|keyboardHidden|screenSize"
+118-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:124:13-74
+119            android:screenOrientation="portrait" />
+119-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:125:13-49
+120        <!-- end图库配置项 -->
+121
+122        <activity
+122-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:128:9-131:71
+123            android:name="io.rong.imkit.feature.location.SearchLocationActivity"
+123-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:129:13-81
+124            android:screenOrientation="portrait"
+124-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:130:13-49
+125            android:windowSoftInputMode="stateVisible|adjustResize" />
+125-->D:\APP\GuoGuo\IMKit\src\main\AndroidManifest.xml:131:13-68
+126    </application>
+127
+128</manifest>
